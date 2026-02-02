@@ -493,6 +493,13 @@ void * socketThread(void *arg)
                     }
                     if(n<=1) break;
                 }
+                for_next[0] = '.';
+                for_next[1] = '.';
+                
+                send(klient, "now enemy moves", 256, 0);
+                char* board_line1=send_table(game_id);
+                n=send(klient,board_line1,256,0);
+                free(board_line1);
                 turns[game_id]=(turns[game_id]==2 ? 1 : 2);
                 wal=-1;
                 break;
