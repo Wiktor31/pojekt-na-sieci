@@ -16,5 +16,5 @@ now you run it by executing file and choosing server to connect it to on port 11
 
 
 technologie
-Twój serwer to klasyczny przykład C + TCP socket + multithreading (pthreads) + gry planszowe.
-Nie używa żadnych wyższych frameworków ani bibliotek do sieci (np. Boost.Asio w C++ czy Node.js) – wszystko jest “czystym C”.
+C + TCP socket + multithreading (pthreads) + gry planszowe.
+
